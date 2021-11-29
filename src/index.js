@@ -41,72 +41,91 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('project wired!')
 
+const logoImg = document.querySelector('#logo-img')
+logoImg.src = siteContent.images['logo-img'];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent.images['cta-img'];
+
+const accentImg = document.querySelector('#middle-img');
+accentImg.src = siteContent.images['accent-img'];
+
+
+
+
+
+
+
+
+
 // Variables for HTML creation
 
-const navItem1 = document.querySelector('.nav-item-1');
-const navItem2 = document.querySelector('.nav-item-2');
-const navItem3 = document.querySelector('.nav-item-3');
-const navItem4 = document.querySelector('.nav-item-4');
-const navItem5 = document.querySelector('.nav-item-5');
-const navItem6 = document.querySelector('.nav-item-6');
+// const navItem1 = document.querySelector('.nav-item-1');
+// const navItem2 = document.querySelector('.nav-item-2');
+// const navItem3 = document.querySelector('.nav-item-3');
+// const navItem4 = document.querySelector('.nav-item-4');
+// const navItem5 = document.querySelector('.nav-item-5');
+// const navItem6 = document.querySelector('.nav-item-6');
 
-const ctah1 = document.querySelector('.h1');
-const ctabutton = document.querySelector('.button');
+// const ctah1 = document.querySelector('.h1');
+// const ctabutton = document.querySelector('.button');
 
-const featuresH4 = document.querySelector('.features-h4');
-const featuresContent = document.querySelector('features-content');
-const aboutH4 = document.querySelector('.about-h4');
-const aboutContent = document.querySelector('.about-content');
-const servicesH4 = document.querySelector('.services-h4');
-const servicesContent = document.querySelector('.services-content');
-const productH4 = document.querySelector('.product-h4');
-const productContent = document.querySelector('.product-content');
-const visionH4 = document.querySelector('.vision-h4');
-const visionContent = document.querySelector('visionContent');
+// const featuresH4 = document.querySelector('.features-h4');
+// const featuresContent = document.querySelector('features-content');
+// const aboutH4 = document.querySelector('.about-h4');
+// const aboutContent = document.querySelector('.about-content');
+// const servicesH4 = document.querySelector('.services-h4');
+// const servicesContent = document.querySelector('.services-content');
+// const productH4 = document.querySelector('.product-h4');
+// const productContent = document.querySelector('.product-content');
+// const visionH4 = document.querySelector('.vision-h4');
+// const visionContent = document.querySelector('visionContent');
 
-const contactH4 = document.querySelector('.contact-h4');
-const address = document.querySelector('.address');
-const phone = document.querySelector('.phone');
-const email = document.querySelector('.email');
+// const contactH4 = document.querySelector('.contact-h4');
+// const address = document.querySelector('.address');
+// const phone = document.querySelector('.phone');
+// const email = document.querySelector('.email');
 
-const copyright = document.querySelector('.copyright');
+// const copyright = document.querySelector('.copyright');
 
-const logoImg = document.querySelector('.logo-img');
-const ctaImg = document.querySelector('.cta-img');
-const accentImg = document.querySelector('.accent-img');
+// const logoImg = document.querySelector('.logo-img');
+// const ctaImg = document.querySelector('.cta-img');
+// const accentImg = document.querySelector('.accent-img');
 
 // Filling in the variables with data
 
-navItem1.textContent = siteContent['nav']['nav-item-1'];
-navItem2.textContent = siteContent['nav']['nav-item-2'];
-navItem3.textContent = siteContent['nav']['nav-item-3'];
-navItem4.textContent = siteContent['nav']['nav-item-4'];
-navItem5.textContent = siteContent['nav']['nav-item-5'];
-navItem6.textContent = siteContent['nav']['nav-item-6'];
+// navItem1.textContent = siteContent['nav']['nav-item-1'];
+// navItem2.textContent = siteContent['nav']['nav-item-2'];
+// navItem3.textContent = siteContent['nav']['nav-item-3'];
+// navItem4.textContent = siteContent['nav']['nav-item-4'];
+// navItem5.textContent = siteContent['nav']['nav-item-5'];
+// navItem6.textContent = siteContent['nav']['nav-item-6'];
 
-ctah1.textContent = siteContent['cta']['h1'];
-ctabutton.textContent = siteContent['cta']['button'];
+// ctah1.textContent = siteContent['cta']['h1'];
+// ctabutton.textContent = siteContent['cta']['button'];
 
-featuresH4.textContent = siteContent['main-content']['features-h4'];
-featuresContent.textContent = siteContent['main-content']['features-content'];
-aboutH4.textContent = siteContent['main-content']['about-h4'];
-aboutContent.textContent = siteContent['main-content']['about-content'];
-serviesH4.textContent = siteContent['main-content']['services-h4'];
-servicesContent.textContent = siteContent['main-content']['services-content'];
-productH4.textContent = siteContent['main-content']['product-h4'];
-productContent.textContent = siteContent['main-content']['product-content'];
-visionH4.textContent = siteContent['main-content']['vision-h4'];
-visionContent.textContent = siteContent['main-content']['vision-content'];
+// featuresH4.textContent = siteContent['main-content']['features-h4'];
+// featuresContent.textContent = siteContent['main-content']['features-content'];
+// aboutH4.textContent = siteContent['main-content']['about-h4'];
+// aboutContent.textContent = siteContent['main-content']['about-content'];
+// serviesH4.textContent = siteContent['main-content']['services-h4'];
+// servicesContent.textContent = siteContent['main-content']['services-content'];
+// productH4.textContent = siteContent['main-content']['product-h4'];
+// productContent.textContent = siteContent['main-content']['product-content'];
+// visionH4.textContent = siteContent['main-content']['vision-h4'];
+// visionContent.textContent = siteContent['main-content']['vision-content'];
 
-contactH4.textContent = siteContent['contact']['contact-h4'];
-address.textContent = siteContent['contact']['address'];
-phone.textContent = siteContent['contact']['phone'];
-email.textContent = siteContent['contact']['email'];
+// contactH4.textContent = siteContent['contact']['contact-h4'];
+// address.textContent = siteContent['contact']['address'];
+// phone.textContent = siteContent['contact']['phone'];
+// email.textContent = siteContent['contact']['email'];
 
-copyright.textContent = siteContent['footer']['copyright'];
+// copyright.textContent = siteContent['footer']['copyright'];
 
-logoImg.textContent = siteContent['images']['logo-img'];
-ctaImg.textContent = siteContent['images']['cta-img'];
-accentImg.textContent = siteContent['images']['accent-img'];
+// logoImg.textContent = siteContent['images']['logo-img'];
+// ctaImg.textContent = siteContent['images']['cta-img'];
+// accentImg.textContent = siteContent['images']['accent-img'];
 
-// HTML Creation
+// // HTML Creation
+// document.querySelector('nav').appendChild(navItem1);
+// document.querySelectorAll('nav a').classList.add('Italic');
