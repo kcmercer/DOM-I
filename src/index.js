@@ -71,8 +71,19 @@ topContent.children[1].children[0].textContent = siteContent['main-content']['ab
 topContent.children[1].children[1].textContent = siteContent['main-content']['about-content'];
 
 //Main Content (bottom content)
-// const bottomContent = document.querySelector('.bottom-content');
-// topContent.children[0].children[0].textContent = siteContent['main-content']['services-h4'];
-// topContent.children[0].children[1].textContent = siteContent['main-content']['services-content'];
-// topContent.children[1].children[0].textContent = siteContent['main-content']['visions-h4'];
-// topContent.children[1].children[1].textContent = siteContent['main-content']['visions-content'];
+const bottomContent = document.querySelector('.bottom-content');
+const bottomh4 = bottomContent.querySelectorAll('h4');
+bottomh4[0].textContent = siteContent['main-content']['services-h4'];
+bottomh4[1].textContent = siteContent['main-content']['product-h4'];
+bottomh4[2].textContent = siteContent['main-content']['vision-h4'];
+
+const bottomp = bottomContent.querySelectorAll('p');
+bottomp[0].textContent = siteContent['main-content']['services-content'];
+bottomp[1].textContent = siteContent['main-content']['product-content'];
+bottomp[2].textContent = siteContent['main-content']['vision-content'];
+
+//CTA text content
+const ctah1 = document.querySelector('.cta h1');
+ctah1.textContent = siteContent.cta.h1;
+const ctabutton = document.querySelector('.cta button');
+ctabutton.textContent = siteContent.cta.button;
