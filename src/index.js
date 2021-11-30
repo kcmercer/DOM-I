@@ -51,17 +51,19 @@ ctaImg.src = siteContent.images['cta-img'];
 const accentImg = document.querySelector('#middle-img');
 accentImg.src = siteContent.images['accent-img'];
 
-// Footer Text Content
-const footerLink = document.querySelector('footer a');
-footerLink.textContent = siteContent.footer.copyright;
-footerLink.classList.add('bold');
+//Nav Text Content
+const nav = document.querySelectorAll('nav a');
+const navText = Object.values(siteContent.nav);
+nav.forEach((link, idx) => {
+  link.textContent = navText[idx]
+  link.classList.add('italic')
+});
 
-// Contact Text Content
-const contact = document.querySelector('section.contact');
-contact.children[0].textContent = siteContent.contact['contact-h4'];
-contact.children[1].textContent = siteContent.contact.address;
-contact.children[2].textContent = siteContent.contact.phone;
-contact.children[3].textContent = siteContent.contact.email;
+//CTA text content
+const ctah1 = document.querySelector('.cta h1');
+ctah1.textContent = siteContent.cta.h1;
+const ctabutton = document.querySelector('.cta button');
+ctabutton.textContent = siteContent.cta.button;
 
 // Main Content (top content)
 const topContent = document.querySelector('.top-content');
@@ -82,8 +84,14 @@ bottomp[0].textContent = siteContent['main-content']['services-content'];
 bottomp[1].textContent = siteContent['main-content']['product-content'];
 bottomp[2].textContent = siteContent['main-content']['vision-content'];
 
-//CTA text content
-const ctah1 = document.querySelector('.cta h1');
-ctah1.textContent = siteContent.cta.h1;
-const ctabutton = document.querySelector('.cta button');
-ctabutton.textContent = siteContent.cta.button;
+// Contact Text Content
+const contact = document.querySelector('section.contact');
+contact.children[0].textContent = siteContent.contact['contact-h4'];
+contact.children[1].textContent = siteContent.contact.address;
+contact.children[2].textContent = siteContent.contact.phone;
+contact.children[3].textContent = siteContent.contact.email;
+
+// Footer Text Content
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+footerLink.classList.add('bold');
